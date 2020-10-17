@@ -1,0 +1,88 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+.foot-col1 {
+	float: left;
+	width: 33.3%;
+}
+.foot-col2 {
+	float: left;
+	width: 33.3%;
+}
+.foot-col3 {
+	float: left;
+	width: 33.3%;
+}
+.footrow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topbar
+{
+	background-color: #ff852e;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	font-family: Arial, Sans-serif;
+	border-radius: 5px;
+}
+.topbar:hover
+{
+	background-color: #ee7015;
+	cursor: pointer;
+}
+.footlnk
+{
+	text-decoration: none;
+	color: white;
+}
+.footlnk:hover
+{
+	text-decoration: underline;
+}
+
+</style>
+<script>
+function scrolltop()
+{
+	window.scrollTo(0, 0); 
+}
+</script>
+<div style="background-color: #fd7411; border-radius: 5px;">
+<div class="topbar" onclick="scrolltop();">
+	Go to top
+</div>
+	<div class="footrow">
+		<div class="foot-col1">
+			<ul style="list-style: none; font-family: calibri;">
+				<li style="padding: 1px; color: white;"><h3>Contact with Us</h3></li>
+				<li style="padding: 5px;"><img src="img/youtube.png">&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=-mPlktAWiU0&feature=youtu.be" class="footlnk">Youtube</a></li>
+				<li style="padding: 5px;"><img src="img/facebook.png">&nbsp;&nbsp;<a href="https://www.facebook.com/jamaicanblends/" class="footlnk">Facebook</a></li>
+				<li style="padding: 5px;"><img src="img/twitter.png">&nbsp;&nbsp;<a href="https://twitter.com/jamaicanblends" class="footlnk">Twitter</a></li>
+			</ul>
+		</div>
+		<div class="foot-col2">
+			<ul style="list-style: none; font-family: calibri;">
+				<li style="padding: 1px; color: white;"><h3>Get to Know Us</h3></li>
+				<li style="padding: 5px;">&nbsp;&nbsp;<a href="aboutus.php" class="footlnk">About Us</a></li>
+				<li style="padding: 5px;">&nbsp;&nbsp;<a href="shipinfo.php" class="footlnk">Shipping information</a></li>
+				<li style="padding: 5px;">&nbsp;&nbsp;<a href="refundreturn.php" class="footlnk">Refund and Return Policy</a></li>
+				<li style="padding: 5px;">&nbsp;&nbsp;<a href="termsconditions.php" class="footlnk">Terms and Conditions</a></li>
+			</ul>
+		</div>
+		<div class="foot-col3">
+			<ul style="list-style: none; font-family: calibri;">
+				<li style="padding: 1px; color: white;"><h3>Contact Us</h3></li>
+				<li style="padding: 5px;"><img src="img/cart.png"><span style="text-decoration: none; color: white;">&nbsp;&nbsp;Carisol</span></li>
+				<li style="padding: 5px;"><img src="img/pin.png"><span style="text-decoration: none; color: white;">&nbsp;&nbsp;38 Cassia Park Road, Kingston 10.</span></li>
+				<li style="padding: 5px;"><img src="img/email.png"><span style="text-decoration: none; color: white;">&nbsp;&nbsp;info@jamaicanblends.com</span></li>
+				<li style="padding: 5px;"><img src="img/phone.png"><span style="text-decoration: none; color: white;">&nbsp;&nbsp;+1-876-535-6390</span></li>
+			</ul>
+		</div>
+	</div>
+	<div style="color: white; border-top: solid 1px white; padding: 10px; font-family: calibri;"> 
+		<center><a href="privacy.php" style="color: white; font-family: calibri; font-size: 14px;">Privacy Policy</a>&nbsp;&nbsp;&nbsp;All Rights Reserved Carisol 2020.</center>
+	</div>
+</div>
