@@ -34,7 +34,7 @@ $client = new SoapClient($wsdlurl , $options);
 $password = 'd5VmG1OI';
 
 // Use your own FAC ID
-$facId = '88801574';
+$facId = '000000000';
 
 // Acquirer is always 464748
 $acquirerId = '464748';
@@ -69,10 +69,10 @@ $currency);
 // only Credit Cards and Transaction details are required.
 
 // Card Details. Arrays serialise to elements in XML/SOAP4
-$CardDetails = array('CardCVV2' => '456',
- 'CardExpiryDate' => '0921',
- 'CardNumber' => '4111111111111111',
- 'CardName' =>'Deron Daye',
+$CardDetails = array('CardCVV2' => $_POST["Cvv"],
+ 'CardExpiryDate' => $_POST["expire-date"],
+ 'CardNumber' => $_POST["Cardno"],
+ 'CardName' =>$_POST["Cardname"],
  'IssueNumber' => '',
  'StartDate' => '');
  
@@ -91,18 +91,18 @@ $TransactionDetails = array('AcquirerId' => $acquirerId,
 
 //Billing Details
 $BillingDetails = array(
-    'BillToAddress' => '8 Savoy Ave',
-    'BillToAddress2' => '',
-    'BillToCity' => 'Kingston 10',
-    'BillToCountry' => 'Jamaica',
-    'BillToEmail' => 'dderon@gmail.com',
-    'BillToFirstName' => 'Deron',
-    'BillToLastName' => 'Daye',
-    'BillToState' => 'Saint Andrew',
-    'BillToTelephone' => '876234869',
-    'BillToZipPostCode' => '0000',
-    'BillToCounty' => 'Surrey',
-    'BillToMobile' =>'8763429798'
+    'BillToAddress' => $_POST[""],
+    'BillToAddress2' => $_POST[""],
+    'BillToCity' => $_POST[""],
+    'BillToCountry' => $_POST[""],
+    'BillToEmail' => $_POST[""],
+    'BillToFirstName' => $_POST[""],
+    'BillToLastName' => $_POST[""],
+    'BillToState' => $_POST[""],
+    'BillToTelephone' => $_POST[""],
+    'BillToZipPostCode' => $_POST[""],
+    'BillToCounty' => $_POST[""],
+    'BillToMobile' =>$_POST[""]
     );
  
 // The request data is named 'Request' for reasons that are not clear!
